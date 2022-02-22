@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+<!DOCTYPE html>
+<html lang="en">
+    
+<!----Bootstrap for header naver--->
+<head>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <title>Customer Manager</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <!----Style for navbar below the header navbar using anchor tag--->
+    <style>
+        .nav1 {
+            color: black;
+            padding-left: 100px;
+        }
+
+        a:link 
+        {
+            color: rgb(2, 3, 2);
+            text-decoration: none;
+        } 
+       
+        a:hover 
+        {
+            color: rgb(129, 68, 199);
+            text-decoration: underline;
+        }
+
+        .nav1 .search-container {
+            float: right;
+        }
+
+        .nav1 input[type=text] {
+            padding: 6px;
+            margin-top: 8px;
+            font-size: 17px;
+            border: none;
+        }
+
+        .nav1 .search-container button {
+            float: right;
+            padding: 6px 10px;
+            margin-top: 8px;
+            margin-right: 16px;
+            background: rgb(226, 192, 119);
+            font-size: 17px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .nav1 .search-container button:hover {
+            background: #ccc;
+        }
+
+        @media screen and (max-width: 600px) {
+            .topnav .search-container {
+                float: none;
+            }
+
+            .nav1 a,
+            .topnav input[type=text],
+            .topnav .search-container button {
+                float: none;
+                display: block;
+                text-align: left;
+                width: 100%;
+                margin: 0;
+                padding: 14px;
+            }
+
+            .nav1 input[type=text] {
+                border: 1px solid rgb(177, 119, 119);
+            }
+        }
+    </style>
+
+    <!----Style for card view--->
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .column {
+            float: left;
+            width: 250px;
+            padding: 30px;
+
+        }
+
+        .row {
+            display: table;
+        }
+
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+        }
+
+        .container {
+            padding: 2px 16px;
+        }
+    </style>
+
+</head>
+
+<!---Header Navbar body--->
+
+<body>
+    <nav class="navbar navbar-light" style="background-color: #e4c489;">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">
+                    <i class="fas fa-user-friends"></i> Customer Manager</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li class="activa"><a href="customer.html">Customers</a></li>
+                <li><a href="order.html">Order</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="aboutme.html">About</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <!---Customer navbar body with anchor tag --->
+
+
+    <h1><b>
+            <center>Customers</center>
+        </b></h1><br>
+    <div class="nav1">
+        <a href="card.html"><i class="material-icons" style="font-size:15px">border_all</i> Card View</a> &nbsp; &nbsp;
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        <a href="list.html"><i class="fa fa-bars"></i> List View</a> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        <a href="maps.html"><i class='far fa-map'></i> Map View</a> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        <a href="newcustomer.html"><i class="fas fa-plus"></i> New Customer</a> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        &nbsp; &nbsp;
+
+        <div class="search-container">
+            <label>Filter: </label><br>
+            <input type="text" placeholder="Search.." name="search">
+            <button type="submit"><i class="fa fa-search"></i></button>
+        </div>
+    </div>
+
+    <!----Card View Body----->
+
+    <body><br><br><br><br>
+        <div class="row">
+            <div class="column">
+                <div class="card">
+                    <img src="img_avatar.png" alt="Avatar" style="width:190px; height: 150px;">
+                    <div class="container">
+                        <h4><b>Ted James</b></h4>
+                        <p>Phoenix,</p>
+                        <p>Arizona</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="card">
+                    <img src="img_avatar2.png" alt="Avatar" style="width:190px; height: 150px;">
+                    <div class="container">
+                        <h4><b>Michelle Thompson</b></h4>
+                        <p>Enclinitas,</p>
+                        <p>California</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="card">
+                    <img src="img_avatar2.png" alt="Avatar" style="width:190px; height: 150px;">
+                    <div class="container">
+                        <h4><b>Tina Adams</b></h4>
+                        <p>Chandler,</p>
+                        <p>Arizona</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="card">
+                    <img src="img_avatar.png" alt="Avatar" style="width:190px; height: 150px;">
+                    <div class="container">
+                        <h4><b>Zed Bishop</b></h4>
+                        <p>Sattle,</p>
+                        <p>Washington</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="card">
+                    <img src="img_avatar2.png" alt="Avatar" style="width:190px; height: 150px;">
+                    <div class="container">
+                        <h4><b>Sia Guthrie</b></h4>
+                        <p>Las Vegas,</p>
+                        <p>Nevada</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="card">
+                    <img src="img_avatar2.png" alt="Avatar" style="width:190px; height: 150px;">
+                    <div class="container">
+                        <h4><b>Amanda Read</b></h4>
+                        <p>Los Angeles,</p>
+                        <p>California</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!----Row number 2-->
+        <div class="row">
+            <div class="column">
+                <div class="card">
+                    <img src="img_avatar.png" alt="Avatar" style="width:190px; height: 150px;">
+                    <div class="container">
+                        <h4><b>Ignor Minar</b></h4>
+                        <p>Dallas,</p>
+                        <p>Texas</p>
+                    </div>
+                </div>
+            </div>
+
+            <!----Row number 3-->
+            <div class="column">
+                <div class="card">
+                    <img src="img_avatar.png" alt="Avatar" style="width:190px; height: 150px;">
+                    <div class="container">
+                        <h4><b>Brad Green</b></h4>
+                        <p>Orlando,</p>
+                        <p>Florida</p>
+                    </div>
+                </div>
+            </div>
+
+            <!----Row number 4-->
+            <div class="column">
+                <div class="card">
+                    <img src="img_avatar.png" alt="Avatar" style="width:190px; height: 150px;">
+                    <div class="container">
+                        <h4><b>Misko Hevery</b></h4>
+                        <p>Carey,</p>
+                        <p>North Carolina</p>
+                    </div>
+                </div>
+            </div>
+
+            <!----Row number 5-->
+            <div class="column">
+                <div class="card">
+                    <img src="img_avatar2.png" alt="Avatar" style="width:190px; height: 150px;">
+                    <div class="container">
+                        <h4><b>Heedy Wahlin</b></h4>
+                        <p>Anaheim,</p>
+                        <p>California</p>
+                    </div>
+                </div>
+            </div>
+
+            <!----Row number 6-->
+            <div class="column">
+                <div class="card">
+                    <img src="img_avatar2.png" alt="Avatar" style="width:190px; height: 150px;">
+                    <div class="container">
+                        <h4><b>Virgil Hanna</b></h4>
+                        <p>New York,</p>
+                        <p>New York</p>
+                    </div>
+                </div>
+            </div>
+
+            <!----Row number 7-->
+            <div class="column">
+                <div class="card">
+                    <img src="img_avatar.png" alt="Avatar" style="width:190px; height: 150px;">
+                    <div class="container">
+                        <h4><b>Ahmed Mackie</b></h4>
+                        <p>Jersy City,</p>
+                        <p>New Jersey</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

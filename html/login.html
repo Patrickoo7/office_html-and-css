@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <title>Customer Manager</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <!---Login Style-->
+    <style>
+        input[type=text],
+        input[type=password] 
+        {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-top: 6px;
+            margin-bottom: 16px;
+            resize: vertical;
+        }
+
+        .container 
+        {
+            background-color: #edf1f0;
+            border-radius: 5px;
+            padding: 20px;
+            width: 80%;
+        }
+
+        button 
+        {
+            padding: 14px, 20px;
+            margin: 8px 0;
+            border: 1px black solid;
+            cursor: pointer;
+            opacity: 0.9;
+            width: 100%;
+            height: 50px;
+            border-radius: 5px;
+        }
+
+        button:hover 
+        {
+            opacity: 1;
+        }
+
+        .loginbtn 
+        {
+            background-color: #04AA6D;
+        }
+
+        a:link 
+        {
+            color: rgb(2, 3, 2);
+            text-decoration: none;
+        } 
+       
+        a:hover 
+        {
+            color: rgb(129, 68, 199);
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-light" style="background-color: #e4c489;">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#"> <i class='fas fa-user-friends'></i> Customer Manager</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li class="activa"><a href="customer.html">Customers</a></li>
+                <li><a href="order.html">Order</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="aboutme.html">About</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!---Login Body-->
+    <h1>
+        <center><b>Login</b></center>
+    </h1><br>
+
+    <div class="container">
+        <label for="name">Email</label>
+        <input type="text" placeholder="Enter First Name" name="t1" size="20" required><br>
+
+        <label for="pass">Password</label>
+        <input type="password" placeholder="Enter First Name" name="t2" size="20" required><br>
+
+        <input type="checkbox" name="t3" style="margin-bottom:15px" checked="checked"> Remember Me <br>
+
+        <div class="clearfix">
+            <button type="button" class="loginbtn"><a href="#" style="color: white">Login</a></button><br>
+        </div>
+
+        <label style="float: right;"><a href="#">Forgot Password</a></label>
+    </div>
+</body>
+</html>

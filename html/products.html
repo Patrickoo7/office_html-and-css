@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <title>Customer Manager</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <!----Style for products--->
+
+    <style>
+        a:link 
+        {
+            color: rgb(2, 3, 2);
+            text-decoration: none;
+        } 
+       
+        a:hover 
+        {
+            color: rgb(129, 68, 199);
+            text-decoration: underline;
+        }
+
+        * 
+        {
+            box-sizing: border-box;
+        }
+
+        .container 
+        {
+            width: 100%;
+            height: 100%;
+            padding: 20px;
+        }
+
+        .btn-primary,
+        .btn-secondary 
+        {
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-light" style="background-color: #e4c489;">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#"> <i class='fas fa-user-friends'></i> Customer Manager</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li class="activa"><a href="customer.html">Customers</a></li>
+                <li><a href="order.html">Order</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="aboutme.html">About</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!---Products Body--->
+
+    <h1>
+        <center><b>All Products</b></center>
+    </h1>
+
+    <!---row1-->
+
+    <div class="container">
+        <div class="row" style="margin-left: 100px;">
+            <div class="col-sm-4">
+                <h3>Basketball</h3>
+                <p>Price: $7.99</p>
+                <button type="button" class="btn btn-primary">Add to Cart</button>
+                <button type="button" class="btn btn-secondary"><a href="viewbasketball.html">View Details</a></button>
+            </div>
+
+            <div class="col-sm-4">
+                <h3>Shoes</h3>
+                <p>Price: $199.41</p>
+                <button type="button" class="btn btn-primary">Add to Cart</button>
+                <button type="button" class="btn btn-secondary"><a href="#">View Details</a></button>
+            </div>
+
+            <div class="col-sm-4">
+                <h3>Hat</h3>
+                <p>Price: $5.77</p>
+                <button type="button" class="btn btn-primary">Add to Cart</button>
+                <button type="button" class="btn btn-secondary"><a href="#">View Details</a></button>
+            </div>
+        </div><br><br>
+
+        <!---row2-->
+
+        <div class="row" style="margin-left: 100px;">
+            <div class="col-sm-4">
+                <h3>Boomerang</h3>
+                <p>Price: $29.49</p>
+                <button type="button" class="btn btn-primary">Add to Cart</button>
+                <button type="button" class="btn btn-secondary"><a href="#">View Details</a></button>
+            </div>
+
+            <div class="col-sm-4">
+                <h3>Helmet</h3>
+                <p>Price: $19.39</p>
+                <button type="button" class="btn btn-primary">Add to Cart</button>
+                <button type="button" class="btn btn-secondary"><a href="#">View Details</a></button>
+            </div>
+
+            <div class="col-sm-4">
+                <h3>Kangaroo Saddle</h3>
+                <p>Price: $179.69</p>
+                <button type="button" class="btn btn-primary">Add to Cart</button>
+                <button type="button" class="btn btn-secondary"><a href="#">View Details</a></button>
+            </div>
+        </div><br><br>
+
+        <!---row3-->
+
+        <div class="row" style="margin-left: 100px;">
+            <div class="col-sm-4">
+                <h3>Swimming Cap</h3>
+                <p>Price: $5.49</p>
+                <button type="button" class="btn btn-primary">Add to Cart</button>
+                <button type="button" class="btn btn-secondary"><a href="#">View Details</a></button>
+            </div>
+
+            <div class="col-sm-4">
+                <h3>Bow</h3>
+                <p>Price: $399.19</p>
+                <button type="button" class="btn btn-primary">Add to Cart</button>
+                <button type="button" class="btn btn-secondary"><a href="#">View Details</a></button>
+            </div>
+
+            <div class="col-sm-4">
+                <h3>Arrows</h3>
+                <p>Price: $69.79</p>
+                <button type="button" class="btn btn-primary">Add to Cart</button>
+                <button type="button" class="btn btn-secondary"><a href="#">View Details</a></button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

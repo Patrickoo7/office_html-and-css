@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <title>Customer Manager</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <!---cart style--->
+    <style type="text/css">
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 1550px;
+        }
+
+        td,
+        th {
+            text-align: left;
+            padding: 8px;
+        }
+
+        .btncancel {
+            background-color: red;
+        }
+
+        hr {
+            margin: 50px;
+        }
+
+        a:link 
+        {
+            color: rgb(2, 3, 2);
+            text-decoration: none;
+        } 
+       
+        a:hover 
+        {
+            color: rgb(129, 68, 199);
+            text-decoration: underline;
+        }
+
+        .btncancel {
+            border-radius: 5px;
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-light" style="background-color: #e4c489;">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#"> <i class='fas fa-user-friends'></i> Customer Manager</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li class="activa"><a href="customer.html">Customers</a></li>
+                <li><a href="order.html">Order</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="aboutme.html">About</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!---Cart body--->
+
+    <h1>
+        <center><b>Items In The Cart</b></center>
+    </h1>
+    <hr style="border: 1px black solid">
+
+    <div class="container">
+        <table>
+            <tr>
+                <th>Product Nmae</th>
+                <th>Product Quantity</th>
+                <th>Unit Price</th>
+                <th>Sub Total</th>
+                <th>Remove Product</th>
+            </tr>
+
+            <tr>
+                <td>Basketball</td>
+                <td>3</td>
+                <td>$7.99</td>
+                <td>$23.97</td>
+                <td><button type="button" class="btncancel" style="color: white;">REMOVE FROM CART</button></td>
+            </tr>
+
+            <tr>
+                <td>Shoes</td>
+                <td>1</td>
+                <td>$199.41</td>
+                <td>$199.41</td>
+                <td><button type="button" class="btncancel" style="color: white;">REMOVE FROM CART</button></td>
+            </tr>
+
+            <tr>
+                <td>Hat</td>
+                <td>2</td>
+                <td>$5.77</td>
+                <td>$11.54</td>
+                <td><button type="button" class="btncancel" style="color: white;">REMOVE FROM CART</button></td>
+            </tr>
+
+            <tr>
+                <td>Bow</td>
+                <td>1</td>
+                <td>$399.19</td>
+                <td>$399.19</td>
+                <td><button type="button" class="btncancel" style="color: white;">REMOVE FROM CART</button></td>
+            </tr>
+
+            <tr>
+                <td>Arrows</td>
+                <td>5</td>
+                <td>$69.79</td>
+                <td>$348.95</td>
+                <td><button type="button" class="btncancel" style="color: white;">REMOVE FROM CART</button></td>
+            </tr>
+        </table>
+    </div>
+    <hr style="border: 1px black solid">
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <p style="margin-left: 850px;">Total: $983.06</p>
+            </div>
+        </div>
+    </div><br>
+
+    <div class="container">
+        <div class="row>">
+            <div class="col-sm-12" style="margin-left: 1050px;">
+                <button type="button" class="btn btn-primary"><a href="checkout.html" style="color: white;">PROCEED TO
+                        CHECKOUT</a></button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

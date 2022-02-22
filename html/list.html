@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<!DOCTYPE html>
+<html lang="en">
+<!----Bootstrap for header naver--->
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <title>Customer Manager</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <!----Style for navbar below the header navbar using anchor tag--->
+    <style>
+        .nav1 
+        {
+            color: black;
+            padding-left: 100px;
+        }
+
+        .nav1 .search-container 
+        {
+            float: right;
+        }
+
+        .nav1 input[type=text] 
+        {
+            padding: 6px;
+            margin-top: 8px;
+            font-size: 17px;
+            border: none;
+        }
+
+        .nav1 .search-container button 
+        {
+            float: right;
+            padding: 6px 10px;
+            margin-top: 8px;
+            margin-right: 16px;
+            background: #ddd;
+            font-size: 17px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .nav1 .search-container button:hover 
+        {
+            background: #ccc;
+        }
+
+        @media screen and (max-width: 600px) 
+        {
+            .topnav .search-container 
+            {
+                float: none;
+            }
+
+            .nav1 a,
+            .topnav input[type=text],
+            .topnav .search-container button 
+            {
+                float: none;
+                display: block;
+                text-align: left;
+                width: 100%;
+                margin: 0;
+                padding: 14px;
+            }
+
+            .nav1 input[type=text] 
+            {
+                border: 1px solid #ccc;
+            }
+        }
+    </style>
+
+    <!-----Style for list-->
+    <style type="text/css">
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        td,
+        th 
+        {
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) 
+        {
+            background-color: hsla(91, 57%, 53%, 0.699);
+        }
+
+        a:link 
+        {
+            color: rgb(2, 3, 2);
+            text-decoration: none;
+        } 
+       
+        a:hover 
+        {
+            color: rgb(129, 68, 199);
+            text-decoration: underline;
+        }
+    </style>
+
+</head>
+
+<!---Header Navbar body--->
+
+<body>
+    <nav class="navbar navbar-light" style="background-color: #e4c489;">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">
+                    <i class="fas fa-user-friends"></i> Customer Manager</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li class="activa"><a href="customer.html">Customers</a></li>
+                <li><a href="order.html">Order</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="aboutme.html">About</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <!---Customer navbar body with anchor tag --->
+
+
+    <h1><b>
+            <center>Customers</center>
+        </b></h1><br>
+    <div class="nav1">
+        <a href="card.html"><i class="material-icons" style="font-size:15px">border_all</i> Card View</a> &nbsp; &nbsp;
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        <a href="list.html"><i class="fa fa-bars"></i> List View</a> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        <a href="maps.html"><i class='far fa-map'></i> Map View</a> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        <a href="newcustomer.html"><i class="fas fa-plus"></i> New Customer</a> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        &nbsp; &nbsp;
+
+        <div class="search-container">
+            <label>Filter: </label><br>
+            <input type="text" placeholder="Search.." name="search">
+            <button type="submit"><i class="fa fa-search"></i></button>
+        </div>
+    </div><br><br><br><br>
+
+
+    <!---List View Body--->
+    <hr style="border: 2px black solid;">
+    <div class="table-container">
+        <table>
+            <tr>
+                <th style="font-size: 20px;">First Name</th>
+                <th style="font-size: 20px;">Last Name</th>
+                <th style="font-size: 20px;">Address</th>
+                <th style="font-size: 20px;">City</th>
+                <th style="font-size: 20px;">State</th>
+                <th style="font-size: 20px;">Order Total</th>
+                <td><a href="#" style="color: black;"></a></td>
+            </tr>
+
+            <tr>
+                <td style="font-size: 20px;"><i class="fa fa-male" style="font-size:24px"></i><a
+                        href="customerdetail1.html" style="color: black;">Ted</a></td>
+                <td style="font-size: 20px;">James</td>
+                <td style="font-size: 20px;">Address</td>
+                <td style="font-size: 20px;">1234, Anywher St.</td>
+                <td style="font-size: 20px;">Phoenix</td>
+                <td style="font-size: 20px;">$207.98</td>
+                <td><a href="#" style="color: black;">View Orders</a></td>
+            </tr>
+
+            <tr>
+                <td style="font-size: 20px;"><i class="fa fa-female" style="font-size:24px"></i><a href="#"
+                        style="color: black;"> Michelle</a></td>
+                <td style="font-size: 20px;">Thompson</td>
+                <td style="font-size: 20px;">345, Ceder Point Ave. </td>
+                <td style="font-size: 20px;">Encinitas</td>
+                <td style="font-size: 20px;">California</td>
+                <td style="font-size: 20px;">$8.98</td>
+                <td><a href="#" style="color: black;">View Orders</a></td>
+            </tr>
+
+            <tr>
+                <td style="font-size: 20px;"><i class="fa fa-male" style="font-size:24px"></i><a href="#"
+                        style="color: black;"> Zed</a></td>
+                <td style="font-size: 20px;">Bishop</td>
+                <td style="font-size: 20px;">1822, Long Bay Dr.</td>
+                <td style="font-size: 20px;">Seattle</td>
+                <td style="font-size: 20px;">Washington</td>
+                <td style="font-size: 20px;">$229.97</td>
+                <td><a href="#" style="color: black;">View Orders</a></td>
+            </tr>
+
+            <tr>
+                <td style="font-size: 20px;"><i class="fa fa-female" style="font-size:24px"></i><a href="#"
+                        style="color: black;">Heedy</a></td>
+                <td style="font-size: 20px;">Wahlin</td>
+                <td style="font-size: 20px;">42nd Street </td>
+                <td style="font-size: 20px;">Anahmeim</td>
+                <td style="font-size: 20px;">California</td>
+                <td style="font-size: 20px;">$544.85</td>
+                <td><a href="#" style="color: black;">View Orders</a></td>
+            </tr>
+
+            <tr>
+                <td style="font-size: 20px;"><i class="fa fa-female" style="font-size:24px"></i><a href="#"
+                        style="color: black;"></a> Tina</a></td>
+                <td style="font-size: 20px;">Adams</td>
+                <td style="font-size: 20px;">1318, E. Coconino Place</td>
+                <td style="font-size: 20px;">Chandler</td>
+                <td style="font-size: 20px;">Arizona</td>
+                <td style="font-size: 20px;">$52.33</td>
+                <td><a href="#" style="color: black;">View Orders</a></td>
+            </tr>
+        </table>
+    </div>

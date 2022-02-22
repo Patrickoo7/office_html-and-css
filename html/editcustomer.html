@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+<!DOCTYPE html>
+<html lang="en">
+<!----Bootstrap for header naver--->
+
+<head>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous" />
+    <title>Customer Manager</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <!----Style for navbar below the header navbar using anchor tag--->
+    <style>
+        .nav1 
+        {
+            color: black;
+            padding-left: 100px;
+        }
+
+        .nav1 .search-container 
+        {
+            float: right;
+        }
+
+        .nav1 input[type="text"] 
+        {
+            padding: 6px;
+            margin-top: 8px;
+            font-size: 17px;
+            border: none;
+        }
+
+        .nav1 .search-container button 
+        {
+            float: right;
+            padding: 6px 10px;
+            margin-top: 8px;
+            margin-right: 16px;
+            background: #ddd;
+            font-size: 17px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .nav1 .search-container button:hover 
+        {
+            background: #ccc;
+        }
+
+        @media screen and (max-width: 600px) 
+        {
+            .topnav .search-container 
+            {
+                float: none;
+            }
+
+            .nav1 a,
+            .topnav input[type="text"],
+            .topnav .search-container button 
+            {
+                float: none;
+                display: block;
+                text-align: left;
+                width: 100%;
+                margin: 0;
+                padding: 14px;
+            }
+
+            .nav1 input[type="text"] 
+            {
+                border: 1px solid #ccc;
+            }
+        }
+    </style>
+
+    <!---Style for customer details--->
+    <style>
+        img 
+        {
+            float: left;
+            padding-left: 50px;
+            margin-right: 500px;
+        }
+
+        p 
+        {
+            font-weight: bold;
+            font-size: 30px;
+        }
+    </style>
+
+    <!----Edit Customer Style--->
+    <style>
+        input[type=text],
+        input[type=date],
+        input[type=number],
+        input[type=email],
+        textarea,
+        select 
+        {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-top: 6px;
+            margin-bottom: 16px;
+            resize: vertical;
+        }
+
+        .container 
+        {
+            background-color: #edf1f0;
+            border-radius: 5px;
+            padding: 20px;
+            width: 80%;
+        }
+
+        button 
+        {
+            padding: 14px, 20px;
+            margin: 8px 0;
+            border: 1px black solid;
+            cursor: pointer;
+            opacity: 0.9;
+            width: 100px;
+            height: 50px;
+            border-radius: 5px;
+        }
+
+
+
+        button:hover 
+        {
+            opacity: 1;
+        }
+
+        .cancelbtn 
+        {
+            float: right;
+        }
+
+        .updatebtn 
+        {
+            float: right;
+            background-color: #04AA6D;
+        }
+
+        .updatebtn,
+        .deletebtn 
+        {
+            color: white;
+        }
+
+        .deletebtn 
+        {
+            background-color: red;
+        }
+
+        a:link 
+        {
+            color: rgb(2, 3, 2);
+            text-decoration: none;
+        } 
+       
+        a:hover 
+        {
+            color: rgb(129, 68, 199);
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<!---Header Navbar body--->
+
+<body>
+    <nav class="navbar navbar-light" style="background-color: #e4c489;">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">
+                    <i class="fas fa-user-friends"></i> Customer Manager</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li class="activa"><a href="customer.html">Customers</a></li>
+                <li><a href="order.html">Order</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="aboutme.html">About</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!---Customer Details body with anchor tag --->
+
+    <h1>
+        <b>
+            <center>Customer Informations</center>
+        </b>
+    </h1>
+    <br />
+
+    <div class="nav1">
+        <a href="customerdetail1.html"><i class="fas fa-list"></i> Customer Details</a>
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        <a href="customerorder.html"><i class="fas fa-tags"></i> Customer Orders</a>
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        <a href="editcustomer.html"><i class="fas fa-edit"></i> Edit Customer</a> &nbsp;
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+    </div><br><br>
+
+    <!---Edit Customer Body--->
+
+    <div class="container">
+        <label for="name">First Name</label>
+        <input type="text" placeholder="Ted" name="t1" size="20"><br>
+
+        <label for="name">Last Name</label>
+        <input type="text" placeholder="James" name="t1" size="20"><br>
+
+        <label for="name">Email</label>
+        <input type="email" placeholder="james@gmail.com" name="t1" size="20"><br>
+
+        <label for="name">Mobile</label>
+        <input type="text" placeholder="james" name="t1" size="20"><br>
+
+        <label>
+            <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Subscribe to get
+            notification from E-Shopper ?
+        </label><br>
+
+        <label for="name">Gender</label>
+        <input type="text" placeholder="Male" name="t1" size="20"><br>
+
+        <label for="name">DOB</label>
+        <input type="date" placeholder="03/19/2021" onfocus="(this.type='date')" name="t1" size="20"><br>
+
+        <label for="name">Favourite Color</label>
+        <input type="text" placeholder="Black" name="t1" size="20"><br>
+
+        <label for="name">Address</label>
+        <textarea id="subject" name="subject" placeholder="1234, Anywher St." style="height:50px"></textarea><br>
+
+        <label for="name">City</label>
+        <input type="text" placeholder="Phoenix" name="t1" size="20"><br>
+
+        <label for="name">State</label>
+        <input type="text" placeholder="Arizona" name="t1" size="20"><br>
+
+        <labe for="name">Country</label>
+            <Select name="country">
+                <option>USA</option>
+                <option>India</option>
+                <option>Mexico</option>
+                <option>UK</option>
+                <option>Canada</option>
+            </Select>
+
+            <div class="clearfix">
+                <button type="button" class="cancelbtn"><a href="#" style="color: black;">Cancel</a></button>
+                <button type="submit" class="updatebtn"><a href="#" style="color: white;">Update</a></button>
+                <button type="submit" class="deletebtn"><a href="#" style="color: white;">Delete</a></button>
+            </div>
+    </div>
+</body>
+
+</html>
